@@ -18,10 +18,8 @@ const imagesList = document.querySelector(".gallery");
 function makeImage(imageData) {
 	imagesList.insertAdjacentHTML(
 		"beforeend",
-		`<li class="gallery__item"><img src=${imageData.url} alt=${imageData.alt} width="370" /></li>`,
+		`<li class="gallery__item"><img src=${imageData.url} alt=${imageData.alt} height="240" /></li>`,
 	);
 }
 
 images.map(makeImage);
-
-console.log(`${images[0].alt}`);
